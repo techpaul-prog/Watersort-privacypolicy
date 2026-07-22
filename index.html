@@ -6,52 +6,91 @@
 <title>Privacy Policy — Water Sort Puzzle</title>
 <style>
   :root {
-    --ink: #0f1c2e; --ink-2: #3d5068; --ink-3: #7a90a8;
-    --rule: #dde4ed; --accent: #1a4f8a; --accent-bg: #eaf1fb;
-    --bg: #ffffff; --card: #f7f9fc;
+    --ink: #0f1c2e;
+    --ink-2: #3d5068;
+    --ink-3: #7a90a8;
+    --rule: #dde4ed;
+    --accent: #1a4f8a;
+    --accent-bg: #eaf1fb;
+    --bg: #ffffff;
+    --card: #f7f9fc;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --ink: #e4ecf5; --ink-2: #94aec8; --ink-3: #5c7a99;
-      --rule: #1e2e42; --accent: #5b9bd5; --accent-bg: #0f1e30;
-      --bg: #0a1421; --card: #0f1d2e;
+      --ink: #e4ecf5;
+      --ink-2: #94aec8;
+      --ink-3: #5c7a99;
+      --rule: #1e2e42;
+      --accent: #5b9bd5;
+      --accent-bg: #0f1e30;
+      --bg: #0a1421;
+      --card: #0f1d2e;
     }
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background: var(--bg); color: var(--ink);
+    background: var(--bg);
+    color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 15px; line-height: 1.75; padding: 2.5rem 1.25rem 4rem;
+    font-size: 15px;
+    line-height: 1.75;
+    padding: 2.5rem 1.25rem 4rem;
   }
   .doc { max-width: 720px; margin: 0 auto; }
-  .header { border-bottom: 2px solid var(--accent); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
   .app-badge {
-    display: inline-flex; align-items: center; gap: 10px;
-    background: var(--accent-bg); border: 1px solid var(--rule);
-    border-radius: 10px; padding: 8px 14px; margin-bottom: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent-bg);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 8px 14px;
+    margin-bottom: 1.25rem;
   }
   .app-icon {
     width: 36px; height: 36px;
     background: linear-gradient(135deg, #1a4f8a 0%, #4fc3f7 100%);
-    border-radius: 8px; display: flex; align-items: center; justify-content: center;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
   }
   .app-icon svg { width: 20px; height: 20px; }
-  .app-name { font-size: 13px; font-weight: 600; color: var(--accent); }
+  .app-name { font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: 0.02em; }
   .app-pkg { font-size: 11px; color: var(--ink-3); font-family: monospace; }
-  h1 { font-size: 26px; font-weight: 700; color: var(--ink); line-height: 1.3; margin-bottom: 0.5rem; }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
   .meta { font-size: 13px; color: var(--ink-3); }
   .meta span { margin-right: 1.5rem; }
   .summary-box {
-    background: var(--accent-bg); border: 1px solid var(--rule);
-    border-left: 4px solid var(--accent); border-radius: 8px;
-    padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 14px; color: var(--ink-2);
+    background: var(--accent-bg);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+    color: var(--ink-2);
   }
   .summary-box strong { color: var(--ink); }
   section { margin-bottom: 2rem; }
   h2 {
-    font-size: 15px; font-weight: 700; color: var(--accent);
-    text-transform: uppercase; letter-spacing: 0.06em;
-    margin-bottom: 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--rule);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
   }
   p { margin-bottom: 0.85rem; color: var(--ink-2); }
   p:last-child { margin-bottom: 0; }
@@ -59,31 +98,70 @@
   li { color: var(--ink-2); margin-bottom: 0.35rem; }
   .table-wrap { overflow-x: auto; margin-bottom: 0.85rem; }
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
-  th { text-align: left; font-weight: 600; color: var(--ink); background: var(--card); padding: 9px 12px; border: 1px solid var(--rule); }
-  td { padding: 8px 12px; border: 1px solid var(--rule); color: var(--ink-2); vertical-align: top; }
+  th {
+    text-align: left;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--card);
+    padding: 9px 12px;
+    border: 1px solid var(--rule);
+  }
+  td {
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    color: var(--ink-2);
+    vertical-align: top;
+  }
   td:first-child { font-family: monospace; font-size: 12px; color: var(--accent); white-space: nowrap; }
-  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
   .tag-no { background: #e8f5e9; color: #2e7d32; }
   .tag-check { background: var(--accent-bg); color: var(--accent); }
-  @media (prefers-color-scheme: dark) { .tag-no { background: #0d2e12; color: #66bb6a; } }
+  @media (prefers-color-scheme: dark) {
+    .tag-no { background: #0d2e12; color: #66bb6a; }
+  }
   .no-collect {
-    display: flex; align-items: flex-start; gap: 12px;
-    background: var(--card); border: 1px solid var(--rule);
-    border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.85rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.85rem;
   }
   .no-collect-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
   .no-collect p { margin: 0; font-size: 14px; }
-  .contact-box { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 1.25rem; }
+  .contact-box {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
   .contact-box a { color: var(--accent); text-decoration: none; }
+  .contact-box a:hover { text-decoration: underline; }
   footer {
-    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
-    font-size: 12px; color: var(--ink-3);
-    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: 12px;
+    color: var(--ink-3);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 </style>
 </head>
 <body>
 <div class="doc">
+
   <div class="header">
     <div class="app-badge">
       <div class="app-icon">
@@ -112,8 +190,168 @@
     <strong>Plain-language summary:</strong> Water Sort Puzzle does not collect, store, or share any personal information. All game data (progress, settings, achievements) is saved only on your device and never leaves it. We do not use ads, analytics, or any third-party tracking.
   </div>
 
-  <!-- sections 1–10 same as above -->
-  ...
+  <section>
+    <h2>1. About this policy</h2>
+    <p>This Privacy Policy describes how Water Sort Puzzle ("the App", "we", "our") handles information when you use the App on your Android device. By using the App you agree to the practices described here.</p>
+    <p>The App is developed and published by an independent developer. If you have questions, contact us at the address in Section 9.</p>
+  </section>
+
+  <section>
+    <h2>2. Information we do not collect</h2>
+    <p>The App does <strong>not</strong> collect any of the following:</p>
+    <div class="no-collect">
+      <span class="no-collect-icon">🚫</span>
+      <p><strong>Personal identifiers</strong> — no name, email address, phone number, date of birth, or any account credentials. The App has no sign-up or login.</p>
+    </div>
+    <div class="no-collect">
+      <span class="no-collect-icon">🚫</span>
+      <p><strong>Location data</strong> — the App never requests or accesses your device location.</p>
+    </div>
+    <div class="no-collect">
+      <span class="no-collect-icon">🚫</span>
+      <p><strong>Device identifiers</strong> — no IMEI, advertising ID, or any hardware identifier is read or transmitted.</p>
+    </div>
+    <div class="no-collect">
+      <span class="no-collect-icon">🚫</span>
+      <p><strong>Camera, microphone, or contacts</strong> — the App does not request or use any of these permissions.</p>
+    </div>
+    <div class="no-collect">
+      <span class="no-collect-icon">🚫</span>
+      <p><strong>Financial data</strong> — the App contains no in-app purchases, subscriptions, or any payment flow. No financial information is ever processed.</p>
+    </div>
+    <div class="no-collect">
+      <span class="no-collect-icon">🚫</span>
+      <p><strong>Usage analytics or crash reports</strong> — no analytics SDK (Firebase, Mixpanel, etc.) and no crash-reporting library is included. No behavioral or diagnostic data is sent to any server.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Data stored locally on your device</h2>
+    <p>The App saves the following data <strong>only on your device</strong> using Android's Room database and DataStore libraries. This data never leaves your device.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+            <th>Storage</th>
+            <th>Transmitted?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Level progress &amp; stars</td>
+            <td>Track which levels are completed and star ratings earned</td>
+            <td>Room database (on-device)</td>
+            <td><span class="tag tag-no">Never</span></td>
+          </tr>
+          <tr>
+            <td>Move count &amp; elapsed time</td>
+            <td>Score calculation and display within a game session</td>
+            <td>In-memory only (discarded on exit)</td>
+            <td><span class="tag tag-no">Never</span></td>
+          </tr>
+          <tr>
+            <td>Achievement records</td>
+            <td>Display unlocked achievements in-app</td>
+            <td>Room database (on-device)</td>
+            <td><span class="tag tag-no">Never</span></td>
+          </tr>
+          <tr>
+            <td>Language preference</td>
+            <td>Display the App in your chosen language</td>
+            <td>DataStore Preferences (on-device)</td>
+            <td><span class="tag tag-no">Never</span></td>
+          </tr>
+          <tr>
+            <td>App settings (theme, sound)</td>
+            <td>Restore your preferences between sessions</td>
+            <td>DataStore Preferences (on-device)</td>
+            <td><span class="tag tag-no">Never</span></td>
+          </tr>
+          <tr>
+            <td>Onboarding completion flag</td>
+            <td>Skip the introduction screens after first launch</td>
+            <td>DataStore Preferences (on-device)</td>
+            <td><span class="tag tag-no">Never</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>All locally stored data is deleted automatically if you uninstall the App, or you can clear it at any time via Android Settings → Apps → Water Sort Puzzle → Clear Data.</p>
+  </section>
+
+  <section>
+    <h2>4. Android permissions explained</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why it is needed</th>
+            <th>Data accessed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>INTERNET</td>
+            <td>Required by the Android OS networking stack. The App uses this only to detect whether a network interface is reachable and display the "No Internet" screen when offline.</td>
+            <td><span class="tag tag-check">Connectivity status only</span></td>
+          </tr>
+          <tr>
+            <td>ACCESS_NETWORK_STATE</td>
+            <td>Reads the active network connection state (connected / disconnected) so the App can show the offline screen. No network traffic or personal data is involved.</td>
+            <td><span class="tag tag-check">Connection state only</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Neither permission is used to send any data to any external server. No other permissions are declared in the App's manifest.</p>
+  </section>
+
+  <section>
+    <h2>5. Third-party libraries</h2>
+    <p>The App uses the following open-source Android libraries. None of them collect or transmit personal data from users of this App:</p>
+    <ul>
+      <li><strong>Jetpack Compose / Material 3</strong> — Google's UI toolkit; renders screens on-device.</li>
+      <li><strong>Hilt (Dagger)</strong> — dependency injection framework; no data collection.</li>
+      <li><strong>Room</strong> — SQLite database wrapper; stores data locally only.</li>
+      <li><strong>DataStore Preferences</strong> — key-value preference storage; local only.</li>
+      <li><strong>Navigation Compose</strong> — in-app screen routing; no data collection.</li>
+      <li><strong>Lottie Compose</strong> — renders bundled animation files; no network calls.</li>
+      <li><strong>Core Splashscreen</strong> — displays the Android 12+ splash screen; no data collection.</li>
+      <li><strong>Gson</strong> — JSON serialisation used internally; no data collection.</li>
+    </ul>
+    <p>No advertising, analytics, crash-reporting, or social SDK is included.</p>
+  </section>
+
+  <section>
+    <h2>6. Children's privacy</h2>
+    <p>The App is suitable for all ages, including children under 13. Because the App collects no personal information whatsoever, it complies with the Children's Online Privacy Protection Act (COPPA) and Google Play's Families Policy. We do not knowingly collect any data from any user, child or adult.</p>
+  </section>
+
+  <section>
+    <h2>7. Data sharing and selling</h2>
+    <p>We do not sell, rent, trade, or share any user data with any third party for any purpose. There is no data to share — the App does not transmit any information off your device.</p>
+  </section>
+
+  <section>
+    <h2>8. Security</h2>
+    <p>All data is stored on your device using Android's standard application sandbox. Only the App itself can access its own database and preference files. We do not operate any servers that receive or store user data.</p>
+  </section>
+
+ 
+
+  <section>
+    <h2>9. Changes to this policy</h2>
+    <p>If the App's data practices change in a future update, this policy will be updated and the "Last updated" date at the top will reflect the revision. We encourage you to review this policy periodically. Continued use of the App after a policy update constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <footer>
+    <span>Water Sort Puzzle</span>
+    <span>Effective July 23, 2026</span>
+  </footer>
+
 </div>
 </body>
 </html>
